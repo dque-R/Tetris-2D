@@ -787,13 +787,13 @@ int main(){
                 if(!check_of_the_collision(&current, 0, 1)){
                     current.y++;
                 }else{
-                    // Фіксація фігури та перевірка ліній
+                    // Fixing the figure and controlling the lines
                     fix_figure(&current);
                     updating_stats(clearing_the_lines());
                     current = next_piece;
                     create_figure(&next_piece, rand() % 7);
 
-                    // ПЕРЕВІРКА НА ЗАВЕРШЕННЯ ГРИ (після автоматичного падіння)
+                    // CHECK AT THE END OF THE GAME (after automatic fall)
                     if(check_of_the_collision(&current, 0, 0)){
                         game_is_over = 1;
                         save_highest_score();
