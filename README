@@ -1,0 +1,37 @@
+# Tetris-2D
+
+A terminal-based 2D Tetris game implemented in C using ncurses.
+
+## Overview
+
+The game includes player name registration, selectable difficulty speed, line clearing, score tracking, game saving/loading, and persistent high scores.
+
+## How to Play
+
+1. Name Entry: Type your player name at startup.
+2. Select Difficulty: Choose starting speed:
+   - 1: Easy
+   - 2: Medium
+   - 3: Hard
+3. Gameplay: Clear lines to score points. The side panel shows current score, level, lines, and the next piece.
+
+## Controls
+
+- Left / Right / Down Arrows: Move piece
+- Arrow up: Rotate
+- Space: Drop
+- P: Pause
+- S: Save game
+- L: Load game
+- R: Restart
+- Q: Quit
+
+## Requirements
+
+- GCC compiler
+- ncurses development library
+
+Ubuntu/Debian installation:
+```bash
+sudo apt update
+sudo apt install build-essential libncurses5-dev libncursesw5-dev
