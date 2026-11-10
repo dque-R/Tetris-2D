@@ -3,3 +3,5 @@ main
 
 *.txt
 *.dat
+
+.vscode/
